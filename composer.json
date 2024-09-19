@@ -6,6 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "api-platform/graphql": "^4",
+        "api-platform/laravel": "^4",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
     },
@@ -44,6 +46,12 @@
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
+        ],
+        "reset": [
+            "rm database/database.sqlite",
+            "touch database/database.sqlite",
+            "@php artisan migrate",
+            "@php artisan db:seed"
         ]
     },
     "extra": {
