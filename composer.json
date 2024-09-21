@@ -9,7 +9,8 @@
         "api-platform/graphql": "^4",
         "api-platform/laravel": "^4",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "mongodb/laravel-mongodb": "^5.1@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
