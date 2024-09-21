@@ -115,7 +115,7 @@ return [
         'mongodb' => [
             'driver' => 'mongodb',
             'dsn' => env('MONGODB_DSN', 'mongodb://localhost:27017'),
-            'database' => env('MONGODB_DATABASE', 'api-platform'),
+            'database' => env('MONGODB_DATABASE', 'sample_mflix'),
         ],
     ],
 
